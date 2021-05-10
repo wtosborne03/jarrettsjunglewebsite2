@@ -1,0 +1,46 @@
+{{ define "main" }}
+
+<section class="section-sm pb-0">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <h2>{{ .Title | markdownify }}</h2>
+        <div class="content mb-4">
+          {{ .Content }}
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- blog post -->
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mb-5 mb-lg-0">
+        <div class="row">
+          <figure class="cd-image-container">
+            <img src="img/img-original.jpg" alt="Original Image">
+            <span class="cd-image-label" data-type="original">Original</span>
+           
+            <div class="cd-resize-img"> <!-- the resizable image on top -->
+               <img src="img/img-modified.jpg" alt="Modified Image">
+               <span class="cd-image-label" data-type="modified">Modified</span>
+            </div>
+           
+            <span class="cd-handle"></span> <!-- slider handle -->
+         </figure>
+        </div>
+      </div>
+      
+      <!-- pagination -->
+      <div class="col-12 mt-5">
+        {{ template "_internal/pagination.html" . }}
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /blog post -->
+{{ end }}

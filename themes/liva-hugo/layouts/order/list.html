@@ -1,0 +1,65 @@
+{{ define "main" }}
+
+<section class="section-sm pb-0">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <h2>{{ .Title | markdownify }}</h2>
+        <div class="content mb-4">
+          {{ .Content }}
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- blog post -->
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mb-5 mb-lg-0">
+        <div class="row">
+          <div class="col-4">
+            <article class="card post-card">
+              <img src="https://www.jarrettsjungle.com/photos/PICT0174.jpg" class="card-img-top" alt="Flower">
+              <div class="card-body px-0">
+              <a href="{{ .Permalink }}" class="h5 d-block my-3">Mixed Arrangement</a>
+              <p class="card-text">Mixed Flower Arrangement</p>
+              <a href="{{ .Permalink }}" class="btn btn-outline-primary">Purchase</a>
+              </div>
+          </article>
+          </div>
+          <div class="col-4">
+            <article class="card post-card">
+              <img src="https://www.jarrettsjungle.com/photos/PICT0174.jpg" class="card-img-top" alt="Flower">
+              <div class="card-body px-0">
+              <a href="{{ .Permalink }}" class="h5 d-block my-3">Mixed Arrangement</a>
+              <p class="card-text">Mixed Flower Arrangement</p>
+              <a href="{{ .Permalink }}" class="btn btn-outline-primary">Purchase</a>
+              </div>
+          </article>
+          </div>
+          <div class="col-4">
+            <article class="card post-card">
+              <img src="https://www.jarrettsjungle.com/photos/PICT0174.jpg" class="card-img-top" alt="Flower">
+              <div class="card-body px-0">
+              <a href="{{ .Permalink }}" class="h5 d-block my-3">Mixed Arrangement</a>
+              <p class="card-text">Mixed Flower Arrangement</p>
+              <a href="{{ .Permalink }}" class="btn btn-outline-primary">Purchase</a>
+              </div>
+          </article>
+          </div>
+        </div>
+      </div>
+      
+      <!-- pagination -->
+      <div class="col-12 mt-5">
+        {{ template "_internal/pagination.html" . }}
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /blog post -->
+{{ end }}

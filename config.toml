@@ -1,0 +1,136 @@
+######################## default configuration ####################
+baseURL = "https://examplesite.com"
+languageCode = "en-us"
+title = "Jarretts Jungle"
+theme = "liva-hugo"
+summaryLength = "10"
+paginate = 6
+disqusShortname = ""
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+############################# Plugins ##############################
+[params.plugins]
+
+  # CSS Plugins
+  [[params.plugins.css]]
+  URL = "plugins/bootstrap/bootstrap.min.css"
+  [[params.plugins.css]]
+  URL = "plugins/slick/slick.css"
+  [[params.plugins.css]]
+  URL = "plugins/themify-icons/themify-icons.css"
+  [[params.plugins.css]]
+  URL = "plugins/venobox/venobox.css"
+
+  # JS Plugins
+  [[params.plugins.js]]
+  URL = "plugins/jQuery/jquery.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/bootstrap/bootstrap.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/slick/slick.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/venobox/venobox.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/search/fuse.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/search/mark.js"
+  [[params.plugins.js]]
+  URL = "plugins/search/search.js"
+
+
+############################## navigation ###############################
+[menu]
+
+  # main menu
+  [[menu.main]]
+  name = "About"
+  URL = "about"
+  weight = 1
+
+  [[menu.main]]
+  name = "Services"
+  URL = "services"
+  weight = 2
+
+  [[menu.main]]
+  name = "Greenhouse Plants"
+  URL = "categories/plants"
+  weight = 3
+
+  [[menu.main]]
+  name = "Floral Orders"
+  URL = "order"
+  weight = 4
+
+  # footer menu
+  [[menu.footer]]
+  name = "About"
+  URL = "about"
+  weight = 1
+
+  [[menu.footer]]
+  name = "Order"
+  URL = "order"
+  weight = 2
+
+  [[menu.footer]]
+  name = "Contact"
+  URL = "contact"
+  weight = 3
+
+
+#################### default parameters ################################
+[params]
+logo = "images/Logo.svg"
+home = "Home"
+# Meta data
+description = "Jarretts Jungle"
+author = "Jungle"
+# Google Analitycs
+googleAnalitycsID = "Your ID"
+# Contact Information
+mobile = "803.796.4670"
+email = "jarrettsjungle@gmail.com"
+location = "West Columbia, SC"
+# copyright
+copyright = "| copyright &copy; Jarretts Jungle |"
+
+  # Preloader
+  [params.preloader]
+  enable = true
+  preloader = "" # use .png , .svg or .gif format
+
+  # search 
+  [params.search]
+  enable = true
+
+############################ news letter ########################
+[params.newsletter]
+enable = false
+title = "Join Our Newsletter"
+content = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero"
+
+
+# cookies
+[params.cookies]
+enable = true
+expire_days = 2
+
+
+############################# social site ########################
+[[params.social]]
+title = "facebook"
+icon = "ti-facebook" # themify icon : https://themify.me/themify-icons
+link = "#"
+
+[[params.social]]
+title = "twitter"
+icon = "ti-twitter-alt" # themify icon : https://themify.me/themify-icons
+link = "#"
+
+[[params.social]]
+title = "instagram"
+icon = "ti-instagram" # themify icon : https://themify.me/themify-icons
+link = "#"
