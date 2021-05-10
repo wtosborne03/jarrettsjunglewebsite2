@@ -8,9 +8,6 @@ categories: []
 tags: []
 image: 'https://cloudinary-a.akamaihd.net/ufn/image/upload/u7cdzxvxu69pmubmtltc.jpg'
 ---
-## Lorem ipsum
+Welcome to our Flowers!
 
-Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-- Lorem ipsum
-- dolor sit amet
+## OUR FLOWERS ARE GREAT
