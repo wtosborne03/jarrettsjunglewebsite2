@@ -1,10 +1,10 @@
 ######################## default configuration ####################
-baseURL = "https://examplesite.com"
+baseURL = "https://jarrettsjungle.com"
 languageCode = "en-us"
 title = "Jarretts Jungle"
 theme = "liva-hugo"
-summaryLength = "10"
-paginate = 6
+summaryLength = "5"
+paginate = 20
 disqusShortname = ""
 
 [outputs]

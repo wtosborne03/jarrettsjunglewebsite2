@@ -1,10 +1,10 @@
 <div class="col-6 col-lg-4">
     <article class="card post-card">
         {{ if .Params.Image }}
-        <img src="{{ .Params.Image | absURL }}" class="card-img-top" alt="{{ .Title | markdownify }}">
+        <a href="{{ .Permalink }}"><img src="{{ .Params.Image | absURL }}" class="card-img-top" alt="{{ .Title | markdownify }}"></a>
         {{ end }}
         <div class="card-body px-0">
-        <a href="{{ .Permalink }}" class="h5 d-block my-3">{{ .Title | markdownify }}</a>
+        <a href="{{ .Permalink }}" class="postit">{{ .Title | markdownify }}</a>
         <p class="card-text">{{ .Description }}</p>
         <a href="{{ .Permalink }}" class="btn btn-outline-primary">read more</a>
         </div>

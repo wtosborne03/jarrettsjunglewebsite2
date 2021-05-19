@@ -159,6 +159,8 @@
   
 }
 
+
+
 .small-post-border {
   margin: 10px;
   padding: 10px;
@@ -199,7 +201,7 @@
   padding: 10px;
   margin-top: 20px;
   width: 100%;
-  max-height: 800px;
+  aspect-ratio: 1/1;
   overflow: hidden;
   transition: all .2s ease-in-out;
   
@@ -209,18 +211,35 @@
     -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
   &:hover {
     transform: scale(1.04);
-    box-shadow: 
+    box-shadow:  
     8px 8px 12px 0 rgba(0, 0, 0, 0.25),
     -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
   }
 }
 .card-img-top {
-  width:70%;
-  margin: auto;
-  margin-top: 10%;
+  width:100%;
+  aspect-ratio: 1/1;
+  filter: brightness(75%);
 }
 .card-text {
   font-size: 14px;
+}
+.postit {
+  color: white;
+  z-index: 5;
+  transition: all .2s ease-in-out;
+  position: absolute;
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  &:hover {
+    font-weight:900;
+    font-size:48px;
+    color: rgb(255, 255, 255);
+  }
 }
 
 /* widget */
