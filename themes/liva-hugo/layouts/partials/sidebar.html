@@ -11,22 +11,7 @@
     <a href="{{ .Permalink }}" class="btn btn-outline-primary">Know More</a>
     {{ end }}
   </div>
-  <!-- category -->
-  <div class="widget">
-    <h4 class="widget-title">Tags</h4>
-    {{- if isset .Site.Taxonomies "categories" }}
-    {{- if not (eq (len .Site.Taxonomies.categories) 0) }}
-    <ul class="list-unstyled">
-      {{- range $name, $items := .Site.Taxonomies.categories }}
-      <li><a
-          href="{{ `categories/` | relLangURL }}{{ $name | urlize | lower }}">{{ $name | title | humanize }}</a>
-      </li>
-      {{- end }}
-    </ul>
-    {{- end }}
-    {{- end }}
-  </div>
-  <!-- Tags -->
+  
   <!-- social -->
   <div class="widget">
     <h4 class="widget-title">Social</h4>
@@ -37,7 +22,5 @@
     </ul>
   </div>
   <!-- advertisement -->
-  <div class="widget">
-    <img src="{{`images/promotion.png` | absURL}}" alt="" class="img-fluid">
-  </div>
+ 
 </div>
