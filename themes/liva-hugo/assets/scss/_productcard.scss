@@ -1,6 +1,6 @@
 .wrapper {
   height: 220px;
-  width: 654px;
+  width: 400px;
   margin: 50px auto;
   border-radius: 7px 7px 7px 7px;
   /* VIA CSS MATIC https://goo.gl/cIbnS */
@@ -11,8 +11,8 @@
 
 .product-img {
   float: left;
-  height: 420px;
-  width: 327px;
+  height: 320px;
+  width: 200px;
 }
 
 .product-img img {
@@ -21,15 +21,15 @@
 
 .product-info {
   float: left;
-  height: 420px;
-  width: 327px;
+  height: 300px;
+  width: 200px;
   border-radius: 0 7px 10px 7px;
   background-color: #ffffff;
 }
 
 .product-text {
   height: 300px;
-  width: 327px;
+  width: 200px;
 }
 
 .product-text h1 {
@@ -45,7 +45,7 @@
 }
 
 .product-text h2 {
-  margin: 0 0 47px 38px;
+  margin: 0 0 0px 38px;
   font-size: 13px;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
@@ -55,8 +55,7 @@
 }
 
 .product-text p {
-  height: 125px;
-  margin: 0 0 0 38px;
+  margin: 0 0 0 36px;
   font-family: 'Playfair Display', serif;
   color: #8d8d8d;
   line-height: 1.7em;
@@ -66,19 +65,16 @@
 }
 
 .product-price-btn {
+  
   height: 103px;
-  width: 327px;
-  margin-top: 17px;
-  position: relative;
+  width: 200px;
+  
 }
 
-.product-price-btn p {
-  display: inline-block;
-  position: absolute;
-  top: -13px;
-  height: 50px;
+.product-info p {
+  margin-left: 37px;
   font-family: 'Trocchi', serif;
-  margin: 0 0 0 38px;
+
   font-size: 28px;
   font-weight: lighter;
   color: #474747;
@@ -86,17 +82,18 @@
 
 span {
   display: inline-block;
-  height: 50px;
   font-family: 'Suranna', serif;
   font-size: 34px;
 }
 
-.product-price-btn button {
-  float: right;
-  display: inline-block;
+.product-info button {
+  position: absolute;
   height: 50px;
   width: 176px;
-  margin: 0 40px 0 16px;
+  bottom: 32px;
+
+  left: 210px;
+  margin: 0 80px 0 16px;
   box-sizing: border-box;
   border: transparent;
   border-radius: 60px;
@@ -111,6 +108,6 @@ span {
   outline: none;
 }
 
-.product-price-btn button:hover {
+.product-info button:hover {
   background-color: #79b0a1;
 }
