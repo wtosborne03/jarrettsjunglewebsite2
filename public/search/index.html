@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Jarretts Jungle</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="this is meta description">
+  <meta name="author" content="Jungle">
+  <meta name="generator" content="Hugo 0.83.0" />
+
+  <!-- plugins -->
+  
+  <base href="/">
+  <link rel="stylesheet" href="https://jarrettsjungle.com/plugins/bootstrap/bootstrap.min.css ">
+  
+  <base href="/">
+  <link rel="stylesheet" href="https://jarrettsjungle.com/plugins/slick/slick.css ">
+  
+  <base href="/">
+  <link rel="stylesheet" href="https://jarrettsjungle.com/plugins/themify-icons/themify-icons.css ">
+  
+  <base href="/">
+  <link rel="stylesheet" href="https://jarrettsjungle.com/plugins/venobox/venobox.css ">
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+ 
+ 
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script> 
+  <script src="https://use.fontawesome.com/70a77c55f1.js"></script>
+
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://jarrettsjungle.com/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://jarrettsjungle.com/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://jarrettsjungle.com/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'Your ID', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom border-5 pl-0">
+      <div class="">
+      <a class="navbar-brand mobile-view" href="https://jarrettsjungle.com"><img class="img-fluid"
+          src="https://jarrettsjungle.com/images/Logo.svg" alt="Jarretts Jungle"></a></div>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+       
+      </button>
+        <a class="navbar-brand mx-auto desktop-view" href="https://jarrettsjungle.com"><img class="img-fluid"
+            src="https://jarrettsjungle.com/images/Logo.svg" alt="Jarretts Jungle"></a>
+          <ul class="navbar-nav">
+            
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://jarrettsjungle.com/about">- About</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://jarrettsjungle.com/services">- Services</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://jarrettsjungle.com/categories/plants">- Greenhouse Plants</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://jarrettsjungle.com/order">- Floral Orders</a>
+          </li>
+          
+           
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://jarrettsjungle.com/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Search...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div id="search-results"></div>
+        <script id="search-result-template" type="text/x-js-template">
+          <div class="py-4 border-bottom" id="summary-${key}">
+            <h4><a href="${link}">${title}</a></h4>
+            <p>${snippet}</p>
+            ${ isset tags }<p>Tags: ${tags}</p>${ end }
+            ${ isset categories }<p>Categories: ${categories}</p>${ end }
+          </div>
+        </script>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center mb-5">
+        
+      </div>
+               
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="tel:803.796.4670"><i
+                class="ti-mobile mr-3 text-primary"></i>803.796.4670</a></li>
+          
+                     
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>West Columbia, SC</li>
+          
+                     
+          <li class="mb-3"><a class="text-dark" href="mailto:jarrettsjungle@gmail.com"><i
+                class="ti-email mr-3 text-primary"></i>jarrettsjungle@gmail.com</a>
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-2 col-sm-4 mb-5">
+        <h6 class="mb-4">Social Contacts</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="#">facebook</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="#">twitter</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="#">instagram</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-2 col-sm-4 mb-5">
+        <h6 class="mb-4">Location</h6>
+        1621 Sunset Blvd, West Columbia, SC 29169
+        <hr/>
+        <button type="button" class="btn btn-primary" onclick='location.href="https://www.google.com"'>
+        Go Now <i class="fa fa-location-arrow" aria-hidden="true"></i>
+
+        </button>
+      </div>
+      <div class="col-lg-2 col-sm-4 mb-5">
+        <h6 class="mb-4">Hours</h6>
+        <ul class="list-unstyled">
+          <li class="mb-3">
+            <b>Monday-Saturday</b>: 9AM - 6PM<br/>
+            <b>Sunday</b>: Closed
+          </li>
+        </ul>
+        
+      </div>
+      
+      <div class="col-12 border-top py-4 text-center">
+        | copyright © Jarretts Jungle |
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://jarrettsjungle.com/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://jarrettsjungle.com/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://jarrettsjungle.com/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://jarrettsjungle.com/plugins/slick/slick.min.js"></script>
+
+<script src="https://jarrettsjungle.com/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://jarrettsjungle.com/plugins/search/fuse.min.js"></script>
+
+<script src="https://jarrettsjungle.com/plugins/search/mark.js"></script>
+
+<script src="https://jarrettsjungle.com/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://jarrettsjungle.com/js/script.min.js"></script>
+
+<link  href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+  <script  type="text/javascript" src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">I Accept</span>
+</div>
+<script>
+	(function ($) {
+		const cookieBox = document.getElementById('js-cookie-box');
+		const cookieButton = document.getElementById('js-cookie-button');
+		if (!Cookies.get('cookie-box')) {
+			cookieBox.classList.remove('cookie-box-hide');
+			cookieButton.onclick = function () {
+				Cookies.set('cookie-box', true, {
+					expires:  2 
+				});
+				cookieBox.classList.add('cookie-box-hide');
+			};
+		}
+	})(jQuery);
+</script>
+
+
+<style>
+.cookie-box {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 9999;
+  padding: 1rem 2rem;
+  background: rgb(71, 71, 71);
+  transition: all .75s cubic-bezier(.19, 1, .22, 1);
+  color: #fdfdfd;
+}
+
+.cookie-box-hide {
+  display: none;
+}
+</style>
+</body>
+</html>
