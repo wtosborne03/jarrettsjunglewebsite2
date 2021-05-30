@@ -92,6 +92,8 @@
 {{ $script := resources.Get "js/script.js" | minify}}
 <script src="{{ $script.Permalink }}"></script>
 
+<link  href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+  <script  type="text/javascript" src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
 
 <!-- cookie -->
 {{ if site.Params.cookies.enable }}

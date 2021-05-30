@@ -11,6 +11,28 @@
         <div class="content" >
           {{ .Content }}
         </div>
+        <!-- Carousel wrapper -->
+        <div id="nanogallery2"
+              
+                 
+                  data-nanogallery2 = '{
+                        "thumbnailHeight":  300,
+                        "thumbnailWidth":   300,
+                        "itemsBaseURL":     ""
+                        "viewerToolbar":   {
+                          "display":    false,
+                        },
+                        "viewerTools":     {
+                              "topLeft":    "pageCounter",
+                              "topRight":   "playPauseButton, zoomButton, fullscreenButton, closeButton"
+                        }   
+                      }' >
+                      
+                  <!-- gallery content -->
+                  <a href = "/images/gallery/1.jpg"   data-ngThumb = "/images/gallery/1.jpg" > Our Shop </a>
+                  <a href = "/images/gallery/1.jpg"   data-ngThumb = "/images/gallery/1.jpg" > Cats </a>
+                  <a href = "/images/gallery/1.jpg"   data-ngThumb = "/images/gallery/1.jpg" > Flowers </a>
+              </div>
       </div>
     </div>
   </div>

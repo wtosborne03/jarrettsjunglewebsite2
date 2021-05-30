@@ -10,9 +10,13 @@
 
   {{ "<!-- plugins -->" | safeHTML }}
   {{ range .Site.Params.plugins.css }}
+  <base href="/">
   <link rel="stylesheet" href="{{ .URL | absURL }} ">
   {{ end }}
-  <script src="https://js.stripe.com/v3/"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+ 
+ 
 
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -21,7 +25,7 @@
   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
   crossorigin=""></script> 
   <script src="https://use.fontawesome.com/70a77c55f1.js"></script>
-  
+
 
   {{ "<!-- Main Stylesheet -->" | safeHTML }}
   {{ $styles := resources.Get "scss/style.scss" | toCSS | minify }}
