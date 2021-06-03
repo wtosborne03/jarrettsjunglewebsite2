@@ -12,7 +12,7 @@ type : "services"
 
 We offer a variety of services including plant restoration, maintanence, and recommendations.
 
-Come see us if your plant is dying.
+Save your dying plant with a trip to the jungle - or give us a call if you need a quick answer.
 
-We can Fix it.
+We can take care of your plant and bring it back to it's former glory.
 

@@ -12,7 +12,7 @@
         <a class="navbar-brand mx-auto desktop-view" href="{{ .Site.BaseURL }}"><img class="img-fluid"
             src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}"></a>
           <ul class="navbar-nav">
-            {{ range .Site.Menus.main }}
+            {{ range .Site.Menus.main }} 
           {{ if .HasChildren }}
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
