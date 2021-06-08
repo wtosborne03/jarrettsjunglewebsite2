@@ -35,8 +35,8 @@
 
         {{ if .Site.Params.search.enable }}
         {{ "<!-- search -->" | safeHTML }}
-        <div class="search pl-lg-4">
-          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+        <div class="search pl-lg-4" style="margin: auto;">
+          <button id="searchOpen" class="search-btn" ><i class="ti-search"></i></button>
           <div class="search-wrapper">
             <form action="{{ .Site.BaseURL }}/search" class="h-100">
               <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Search...">
