@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://jarrettsjunglewebsite2-kl74l9m0q-wtosborne03.vercel.app"
+baseURL = "/"
 languageCode = "en-us"
 title = "Jarretts Jungle"
 theme = "liva-hugo"
