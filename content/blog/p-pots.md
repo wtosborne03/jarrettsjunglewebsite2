@@ -1,23 +1,15 @@
 ---
-title: "Decorative Pots"
-date: 2019-10-29T10:07:47+06:00
+title: Pots
+date: '2019-10-29T10:07:47+06:00'
 draft: false
-
-# post thumb
-image: "images/post/post-7.jpg"
-
-# meta description
-description: "Decorative Pots"
-
-# taxonomies
+image: images/post/post-7.jpg
+description: Decorative Pots
 categories:
-  - "Pots"
-  - "Plants"
+  - Pots
+  - Plants
 tags:
-  - "New"
-
-# post type
-type: "post"
+  - New
+type: post
 ---
 
 
