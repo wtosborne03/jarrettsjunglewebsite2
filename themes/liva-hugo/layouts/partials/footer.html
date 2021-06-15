@@ -57,7 +57,13 @@
         <h6 class="mb-4">Location</h6>
         1621 Sunset Blvd, West Columbia, SC 29169
         <hr/>
-        <button type="button" class="btn btn-primary" onclick='location.href="https://www.google.com"'>
+        <script>
+          function map() {
+            loc = "https://www.google.com/maps/dir//Jarrett's+Jungle,+1621+Sunset+Blvd,+West+Columbia,+SC+29169/@33.9986009,-81.0901157,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x88f8bcb03a3fac61:0x770474b98a3b8578!2m2!1d-81.0879252!2d33.9986114";
+            location.href=loc;
+          }
+        </script>
+        <button type="button" class="btn btn-primary" onclick='map()'>
         Go Now <i class="fa fa-location-arrow" aria-hidden="true"></i>
 
         </button>
