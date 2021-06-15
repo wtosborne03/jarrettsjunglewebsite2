@@ -8,11 +8,13 @@ assets:
   staticDir: static
   uploadDir: assets
   publicPath: /
+cmsName: git
 models:
   page_1:
     type: page
     label: Page 1
-    match: '**/*'
+    match:
+      - '**/*'
     fields:
       - type: string
         name: title
