@@ -6,6 +6,8 @@ html {
   margin: 0;
 
   .nav-link{
+    font-weight: 700;
+    text-decoration:wavy;
     text-transform: capitalize;
   }
 }
@@ -17,13 +19,7 @@ html {
   }
 }
 
-.navbar-header {
-  float: left;
-  padding: 15px;
-  text-align: center;
-  width: 100%;
-}
-.navbar-brand {float:none;}
+
 
 .navbar-expand-lg .navbar-nav .nav-link {
   padding: 20px;

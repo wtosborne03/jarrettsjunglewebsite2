@@ -1,113 +1,24 @@
-.wrapper {
-  height: 220px;
-  width: 400px;
-  margin: 50px auto;
-  border-radius: 7px 7px 7px 7px;
-  /* VIA CSS MATIC https://goo.gl/cIbnS */
-  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
-  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+.card {
+  box-shadow: 
+    12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+}
+.product {
+  background-image: linear-gradient(to right, #ffffff 0%, #e0ffdf 51%, #ffffff 100%);
+  background-size: 200% auto;
+  transition: all 0.5s ease;
+  transform: scale(1, 1, 1);
+  border-radius: 10px;
+  &:hover {
+    background-position: right center;
+    transform: scale(1.03);
+    box-shadow: 
+    6px 18px 18px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+  }
 }
 
-.product-img {
-  float: left;
-  height: 320px;
-  width: 200px;
-}
-
-.product-img img {
-  border-radius: 7px 0 0 7px;
-}
-
-.product-info {
-  float: left;
-  height: 270px;
-  width: 200px;
-  border-radius: 0 7px 10px 7px;
-  background-color: #ffffff;
-}
-
-.product-text {
-  height: 300px;
-  width: 200px;
-}
-
-.product-text h1 {
-  margin: 0 0 0 38px;
-  padding-top: 52px;
-  font-size: 34px;
-  color: #474747;
-}
-
-.product-text h1,
-.product-price-btn p {
-  font-family: 'Bentham', serif;
-}
-
-.product-text h2 {
-  margin: 0 0 0px 38px;
-  font-size: 13px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #d2d2d2;
-  letter-spacing: 0.2em;
-}
-
-.product-text p {
-  margin: 0 0 0 36px;
-  font-family: 'Playfair Display', serif;
-  color: #8d8d8d;
-  line-height: 1.7em;
-  font-size: 15px;
-  font-weight: lighter;
-  overflow: hidden;
-}
-
-.product-price-btn {
-  
-  height: 103px;
-  width: 200px;
-  
-}
-
-.product-info p {
-  margin-left: 37px;
-  font-family: 'Trocchi', serif;
-
-  font-size: 28px;
-  font-weight: lighter;
-  color: #474747;
-}
-
-span {
-  display: inline-block;
-  font-family: 'Suranna', serif;
-  font-size: 34px;
-}
-
-.product-info button {
-  position: absolute;
-  height: 50px;
-  width: 176px;
-  bottom: 32px;
-
-  left: 210px;
-  margin: 0 80px 0 16px;
-  box-sizing: border-box;
-  border: transparent;
-  border-radius: 60px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  color: #ffffff;
-  background-color: #9cebd5;
-  cursor: pointer;
-  outline: none;
-}
-
-.product-info button:hover {
-  background-color: #79b0a1;
+.product .card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }

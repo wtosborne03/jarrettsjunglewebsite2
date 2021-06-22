@@ -4,63 +4,50 @@
 
 <!-- featured post -->
 <section class="section-sm">
-  <div class="container">
-    <div class="row justify-content-center">
-      
-      <div class="col-10 featured-post-slider">
-        <!-- slider item -->
-        {{ range ( where .Site.RegularPages "Type" "featured" )}}
-        <article class="card featured-post">
-          <div class="row no-gutters align-items-center">
-            
-            <div class="col-md-5">
-              {{ if .Params.Image }}
-              <img src="{{ .Params.Image | absURL }}" class="card-img" alt="{{ .Title | markdownify }}">
-              {{ end }}
-            </div>
-            <div class="col-md-6 offset-md-1">
-              <div class="card-body">
-                <div class="mb-3 post-meta">
-                  <span>By {{ .Site.Params.Author }}</span>
-                  {{ if not .Params.HideDate }}
-                  <span class="border-bottom border-primary px-2 mx-1"></span>
-                  <span>{{ .PublishDate.Format "02 January 2006" }}</span>
-                  {{ end }}
-                </div>
-                <a href="{{ .Permalink }}"
-                  class="h1 font-weight-bold d-block text-dark mb-4 card-title">{{ .Title | markdownify }}</a>
-                <p class="card-text">{{.Summary}}...</p>
-              </div>
-            </div>
-          </div>
-        </article>
-        {{ end }}
-      </div>
+  <div class="container-sm">
+    <div class="container-fluid bg-light text-light p-5 border">
+      <h1 class="display-4">Plant Lover's Paradise!</h1>
+      <p class="lead">For over 40 years, Jarrett's Jungle has offered high quality service and exceptional knowledge.</p>
+      <hr class="my-4">
+      <p>We offer an ample inventory of tropical plants, outdoor plants, and succulents. Our in-store florist can take orders in-person,
+        online, or over the phone. Call us or stop by if you have any plant question!</p>
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      </p>
     </div>
   </div>
 </section>
 <!-- /featured post -->
 
+  <div class="container-sm" style="height:4em;">
+    <div class="d-flex justify-content-center">
+      
+      <h1 style="text-decoration: underline;">Latest</h1>
+      <br/>
+      <br/>
+    </div>
+  </div>
+
 <!-- recent post -->
 <section>
   <div class="container">
-    <div class="row">
+    <div class="row justify-content-center">
       
-      {{ range first 3 (where .Site.RegularPages "Type" "post")}}
-      <div class="col-lg-4 small-post-border">
+      {{ range first 6 (where .Site.RegularPages "Type" "post")}}
+      <div class="col-lg-3 small-post-border" onclick="window.location='{{ .Permalink }}'">
         <article class="media">
           {{ if .Params.Image }}
           <div class="recent-post-thumb mr-3" style="background-image: url('{{ .Params.Image | absURL }}');"></div>
           {{ end }}
           <div class="media-body">
             <div class="mb-3 post-meta">
-              <span>By {{ .Site.Params.Author }}</span>
+              
               {{ if not .Params.HideDate }}
               <span class="border-bottom border-primary px-2 mx-1"></span>
               <span>{{ .PublishDate.Format "02 Jan 2006" }}</span>
               {{ end }}
             </div>
-            <a href="{{ .Permalink }}" class="h5 d-block mb-3">{{ .Title | markdownify }}</a>
+            <a href="{{ .Permalink }}" class="h3 d-block mb-3">{{ .Title | markdownify }}</a>
             <a href="{{ .Permalink }}" class="btn btn-outline-primary">read more</a>
           </div>
         </article>
