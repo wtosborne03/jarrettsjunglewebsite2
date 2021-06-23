@@ -1,7 +1,10 @@
 body {
   background-color: $body-color;
+  background-repeat: repeat;
+  background-size: 10%;
   overflow-x: hidden;
 }
+
 
 ::selection {
   background: lighten($color: $primary-color, $amount: 10);

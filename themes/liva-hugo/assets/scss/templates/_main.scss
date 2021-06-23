@@ -170,11 +170,10 @@
   padding: 10px;
   transition: all .2s ease-in-out;
   &:not(:last-child) {
-    border-right: 1px solid $border-color;
 
     @include desktop {
       border-right: 0;
-      border-bottom: 1px solid $border-color;
+
       margin-bottom: 20px;
       padding-bottom: 20px;
     }

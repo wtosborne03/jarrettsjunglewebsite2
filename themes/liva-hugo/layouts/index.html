@@ -6,14 +6,21 @@
 <section class="section-sm">
   <div class="container-sm">
     <div class="container-fluid bg-light text-light p-5 border">
-      <h1 class="display-4">Plant Lover's Paradise!</h1>
-      <p class="lead">For over 40 years, Jarrett's Jungle has offered high quality service and exceptional knowledge.</p>
-      <hr class="my-4">
-      <p>We offer an ample inventory of tropical plants, outdoor plants, and succulents. Our in-store florist can take orders in-person,
-        online, or over the phone. Call us or stop by if you have any plant question!</p>
-      <p class="lead">
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-      </p>
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <video autoplay muted loop src="video/intro.mp4" width="100%" height="100%" style="filter: blur(1px) saturate(1.5);"></video>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <h1 class="display-4">Plant Lover's Paradise!</h1>
+          <p class="lead">For over 40 years, Jarrett's Jungle has offered high quality service and exceptional knowledge.</p>
+          <hr class="my-4">
+          <p>We offer an ample inventory of tropical plants, outdoor plants, and succulents. Our in-store florist can take orders in-person,
+            online, or over the phone. Call us or stop by if you have any plant question!</p>
+          <p class="lead">
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -30,31 +37,35 @@
 
 <!-- recent post -->
 <section>
-  <div class="container">
-    <div class="row justify-content-center">
+
+    <div class="row justify-content-center" style="margin: 10px;">
       
       {{ range first 6 (where .Site.RegularPages "Type" "post")}}
-      <div class="col-lg-3 small-post-border" onclick="window.location='{{ .Permalink }}'">
+      <div class="col-md-3 col-xs-6 small-post-border" onclick="window.location='{{ .Permalink }}'">
         <article class="media">
-          {{ if .Params.Image }}
-          <div class="recent-post-thumb mr-3" style="background-image: url('{{ .Params.Image | absURL }}');"></div>
-          {{ end }}
-          <div class="media-body">
-            <div class="mb-3 post-meta">
-              
-              {{ if not .Params.HideDate }}
-              <span class="border-bottom border-primary px-2 mx-1"></span>
-              <span>{{ .PublishDate.Format "02 Jan 2006" }}</span>
-              {{ end }}
+          <div class="row"> 
+            {{ if .Params.Image }}
+            <div class="col">
+              <div class="mr-3" style="background-image: url('{{ .Params.Image | absURL }}'); width:100%; height: 100%; background-size: contain; background-repeat: no-repeat;"></div>
             </div>
-            <a href="{{ .Permalink }}" class="h3 d-block mb-3">{{ .Title | markdownify }}</a>
-            <a href="{{ .Permalink }}" class="btn btn-outline-primary">read more</a>
-          </div>
+            {{ end }}
+              <div class="col">
+                <div class="mb-3 post-meta">
+                  
+                  {{ if not .Params.HideDate }}
+                  <span class="border-bottom border-primary px-2 mx-1"></span>
+                  <span>{{ .PublishDate.Format "02 Jan 2006" }}</span>
+                  {{ end }}
+                </div>
+                <a href="{{ .Permalink }}" class="h3 d-block mb-3">{{ .Title | markdownify }}</a>
+                <a href="{{ .Permalink }}" class="btn btn-outline-primary">read more</a>
+              </div>
+            </div>
         </article>
       </div>
       {{ end }}
     </div>
-  </div>
+ 
 </section>
 
 <!-- /recent post -->
