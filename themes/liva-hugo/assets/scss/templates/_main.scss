@@ -142,7 +142,13 @@
   text-align: center;
   width: 100%;
 }
-.navbar-brand {float:none;}
+.navbar-brand {
+  width: 60%;
+  float:none;
+}
+.navbar-toggler {
+  width: 20%;
+}
 
 .post-meta {
   span {
