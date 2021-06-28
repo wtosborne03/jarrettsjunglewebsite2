@@ -15,8 +15,6 @@ disqusShortname = ""
 
   # CSS Plugins
   [[params.plugins.css]]
-  URL = "plugins/bootstrap/bootstrap.min.css"
-  [[params.plugins.css]]
   URL = "plugins/slick/slick.css"
   [[params.plugins.css]]
   URL = "plugins/themify-icons/themify-icons.css"
@@ -24,10 +22,6 @@ disqusShortname = ""
   URL = "plugins/venobox/venobox.css"
 
   # JS Plugins
-  [[params.plugins.js]]
-  URL = "plugins/jQuery/jquery.min.js"
-  [[params.plugins.js]]
-  URL = "plugins/bootstrap/bootstrap.min.js"
   [[params.plugins.js]]
   URL = "plugins/slick/slick.min.js"
   [[params.plugins.js]]
@@ -115,7 +109,7 @@ content = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam non
 
 # cookies
 [params.cookies]
-enable = true
+enable = false
 expire_days = 2
 
 

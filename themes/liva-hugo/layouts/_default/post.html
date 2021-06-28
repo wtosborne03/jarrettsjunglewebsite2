@@ -1,7 +1,7 @@
 <div class="col-6 col-lg-4">
     <article class="card post-card">
         {{ if .Params.Image }}
-        <a href="{{ .Permalink }}"><img src="{{ .Params.Image | absURL }}" class="card-img-top" alt="{{ .Title | markdownify }}"></a>
+        <a href="{{ .Permalink }}"><img class="lazy" src="{{ .Params.Image | absURL }}" class="card-img-top" alt="{{ .Title | markdownify }}"></a>
         {{ end }}
         <div class="card-body px-0">
         <a href="{{ .Permalink }}" class="postit">{{ .Title | markdownify }}</a>
