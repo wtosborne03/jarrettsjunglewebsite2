@@ -228,25 +228,28 @@
 .card-img-top {
   width:100%;
   aspect-ratio: 1/1;
+  object-fit: fill;
   filter: brightness(75%);
 }
 .card-text {
   font-size: 14px;
 }
 .postit {
+  width: 50%;
   color: white;
   z-index: 5;
   transition: all .2s ease-in-out;
   position: absolute;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 7vw;
   text-align: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   &:hover {
     font-weight:900;
-    font-size:48px;
+    font-size:30vw;
+    
     color: rgb(255, 255, 255);
   }
 }
@@ -404,6 +407,7 @@ html {
     }
 
     tbody {
+      width:100%;
       background: $gray;
 
       td {
