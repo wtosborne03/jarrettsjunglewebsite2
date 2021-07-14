@@ -235,20 +235,19 @@
   font-size: 14px;
 }
 .postit {
-  width: 50%;
+  width: 100%;
   color: white;
   z-index: 5;
   transition: all .2s ease-in-out;
   position: absolute;
   font-weight: 400;
-  font-size: 7vw;
+  font-size: 200%;
   text-align: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   &:hover {
     font-weight:900;
-    font-size:30vw;
     
     color: rgb(255, 255, 255);
   }
