@@ -1,17 +1,18 @@
 ---
 title: New Display
-date: 2021-05-10T19:07:23Z
+date: 2021-05-10 19:07:23 Z
 draft: false
 description: We have a new display
 type: post
 categories:
-  - plants
-  - display
+- plants
+- display
 tags:
-  - plant
-  - display
-image: /images/shop/IMG_0736.jpg
+- plant
+- display
+image: "/images/shop/IMG_0736.jpg"
 ---
+
 come check it out
 
 snake plabnt

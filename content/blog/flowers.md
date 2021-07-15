@@ -1,14 +1,15 @@
 ---
 title: Flowers
-date: '2021-05-10T19:07:23.751Z'
+date: 2021-05-10 19:07:23.751000000 Z
 draft: false
 description: lorem-ipsum
 type: lorem-ipsum
 categories:
-  - Plants
+- Plants
 tags: []
-image: 'https://cloudinary-a.akamaihd.net/ufn/image/upload/u7cdzxvxu69pmubmtltc.jpg'
+image: https://cloudinary-a.akamaihd.net/ufn/image/upload/u7cdzxvxu69pmubmtltc.jpg
 ---
+
 Welcome to our Flowers!
 
 ## OUR FLOWERS ARE GREAT

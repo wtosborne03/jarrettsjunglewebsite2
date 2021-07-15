@@ -1,13 +1,9 @@
 ---
-title: "Services"
-date: 2019-10-29T13:49:23+06:00
+title: Services
+date: 2019-10-29 07:49:23 Z
 draft: false
-
-# meta description
-description: "this is meta description"
-
-# type
-type : "services"
+description: this is meta description
+type: services
 ---
 
 We offer a variety of services including plant restoration, maintanence, and recommendations.

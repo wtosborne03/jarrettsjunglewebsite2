@@ -1,25 +1,16 @@
 ---
-title: "New Pothos"
-date: 2019-10-29T10:07:47+06:00
+title: New Pothos
+date: 2019-10-29 04:07:47 Z
 draft: false
-
-# post thumb
-image: "https://images-na.ssl-images-amazon.com/images/I/81m0IBljM-L._AC_SL1500_.jpg"
-
-# meta description
-description: "Pothos available"
-
-# taxonomies
+image: https://images-na.ssl-images-amazon.com/images/I/81m0IBljM-L._AC_SL1500_.jpg
+description: Pothos available
 categories:
-  - "Pothos"
-  - "Plants"
+- Pothos
+- Plants
 tags:
-  - "New"
-
-# post type
-type: "post"
+- New
+type: post
 ---
-
 
 # Pothos available now
 

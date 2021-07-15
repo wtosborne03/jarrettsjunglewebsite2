@@ -1,13 +1,9 @@
 ---
-title: "Plants"
-date: 2019-10-29T13:49:23+06:00
+title: Plants
+date: 2019-10-29 07:49:23 Z
 draft: false
-
-# meta description
-description: "this is meta description"
-
-# type
-type : "plants"
+description: this is meta description
+type: plants
 ---
 
 Take a look at some of the plants we have in stock.

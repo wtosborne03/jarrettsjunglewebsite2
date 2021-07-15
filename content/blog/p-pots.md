@@ -1,17 +1,16 @@
 ---
 title: Pots
-date: '2019-10-29T10:07:47+06:00'
+date: 2019-10-29 04:07:47 Z
 draft: false
 image: images/post/post-7.jpg
 description: Decorative Pots
 categories:
-  - Pots
-  - Plants
+- Pots
+- Plants
 tags:
-  - New
+- New
 type: post
 ---
-
 
 # Decorative Pots
 
