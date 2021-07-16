@@ -1,6 +1,6 @@
 ---
 title: New Pothos
-date: 2019-10-29 04:07:47 Z
+date: 2019-10-29 04:07:47 
 draft: false
 image: https://images-na.ssl-images-amazon.com/images/I/81m0IBljM-L._AC_SL1500_.jpg
 description: Pothos available

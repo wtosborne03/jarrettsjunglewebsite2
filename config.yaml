@@ -1,0 +1,13 @@
+---
+frontmatter:
+  date: 
+    - publishDate
+    - :filename
+    - date
+    - :fileModTime
+  publishDate: 
+    - publishDate
+    - :filename
+    - date
+    - :fileModTime
+---

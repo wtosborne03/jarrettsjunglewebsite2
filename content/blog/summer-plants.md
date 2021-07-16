@@ -1,6 +1,6 @@
 ---
 title: Summer Plants
-date: 2021-05-10 19:07:23 Z
+date: 2021-05-10 19:07:23 
 draft: false
 description: lorem-ipsum
 type: post

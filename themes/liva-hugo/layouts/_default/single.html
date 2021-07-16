@@ -1,9 +1,13 @@
 {{ define "main" }}
 
 <section class="section-sm">
+
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 mx-auto">Tags: 
+      
+      <div class="col-lg-8 mx-auto">
+        <br/>
+        Tags: 
         {{ range .Params.Categories }}
         <a href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}"
           class="text-primary">{{ . | title | humanize }}</a> -
@@ -11,7 +15,7 @@
         <h2>{{ .Title | markdownify }}</h2>
         <div class="mb-3 post-meta">
           
-          <span>{{ .PublishDate.Format "02 January 2006" }}</span> 
+          <span>{{ .Date.Format "02 January 2006" }}</span> 
          
         </div>
         {{ if .Params.image }}
