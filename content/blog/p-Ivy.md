@@ -1,6 +1,6 @@
 ---
 title: Ivy in Stock!
-date: 2019-10-29 04:07:47 
+date: 2019-10-29 04:07:47 Z
 draft: false
 image: https://lindasflowers.com/wp-content/uploads/2016/12/potted-ivy1.jpg
 description: Ivy in Stock
