@@ -1,6 +1,6 @@
 ---
 title: Flowers
-date: 2021-05-19 19:07:00 Z
+date: 2021-05-19 19:07:00
 draft: false
 description: lorem-ipsum
 type: lorem-ipsum
