@@ -1,6 +1,6 @@
 ---
 title: New Display
-date: 2021-05-10 19:07:23 
+date: 2021-05-10 19:07:23 Z
 draft: false
 description: We have a new display
 type: post
