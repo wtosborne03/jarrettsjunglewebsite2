@@ -1,12 +1,13 @@
 ---
 title: Summer Plants
-date: 2021-05-10 19:07:23 Z
-draft: false
+date: 2021-05-10T19:07:23.000+00:00
 description: lorem-ipsum
 type: post
 categories:
 - Plants
-image: https://cloudinary-a.akamaihd.net/ufn/image/upload/u7cdzxvxu69pmubmtltc.jpg
----
+image: ''
 
+---
 Plants for the summer (yuh)
+
+getting plants for the summer (uh)
