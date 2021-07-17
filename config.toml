@@ -54,7 +54,7 @@ disqusShortname = ""
   weight = 3
 
   [[menu.main]]
-  name = "Floral Orders"
+  name = "Shop"
   URL = "order"
   weight = 4
 
