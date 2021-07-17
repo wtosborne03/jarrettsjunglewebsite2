@@ -1,7 +1,4 @@
 ---
----
-
----
 label: Post
 hide_body: false
 fields:
@@ -11,6 +8,8 @@ fields:
 - type: datetime
   name: date
   label: date
+  config:
+    export_format: YYYY-MM-DD
 - type: file
   name: image
   label: image
@@ -26,3 +25,6 @@ fields:
 - type: text
   name: type
   label: type
+  description: '"post"'
+  hidden: false
+  default: post
