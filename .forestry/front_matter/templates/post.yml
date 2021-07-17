@@ -1,7 +1,4 @@
 ---
----
-
----
 label: Post
 hide_body: false
 fields:
@@ -36,3 +33,5 @@ fields:
   description: '"post"'
   hidden: false
   default: post
+pages:
+- content/blog/terrariums.md
