@@ -1,7 +1,4 @@
 ---
----
-
----
 label: Post
 hide_body: false
 fields:
@@ -13,6 +10,7 @@ fields:
   label: date
   config:
     export_format: YYYY-MM-DD
+  default: now
 - type: file
   name: image
   label: image
@@ -22,6 +20,10 @@ fields:
 - type: list
   name: categories
   label: categories
+  config:
+    use_select: false
+  hidden: false
+  description: use "Plants" for it to show up on the news/plants section
 - type: list
   name: tags
   label: tags
