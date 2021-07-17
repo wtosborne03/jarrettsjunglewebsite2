@@ -1,26 +1,17 @@
 ---
-title: "Venus Fly Traps"
-date: 2019-10-29T10:07:47+06:00
+title: Venus Fly Traps
+date: 2019-10-29 04:07:47 Z
 draft: false
-
-# post thumb
-image: "https://m.media-amazon.com/images/I/612tbp-7chL._AC_.jpg"
-
-# meta description
-description: "Ikebana"
-
-# taxonomies
+image: https://m.media-amazon.com/images/I/612tbp-7chL._AC_.jpg
+description: Ikebana
 categories:
-  - "Carnivorous"
-  - "Rare"
-  - "Plants"
+- Carnivorous
+- Rare
+- Plants
 tags:
-  - "New"
-
-# post type
-type: "post"
+- New
+type: post
 ---
-
 
 # Pothos available now
 

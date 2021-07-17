@@ -1,13 +1,9 @@
 ---
-title: "Order"
-date: 2019-10-29T13:49:23+06:00
+title: Order
+date: 2019-10-29 07:49:23 Z
 draft: false
-
-# meta description
-description: "this is meta description"
-
-# type
-type : "order"
+description: this is meta description
+type: order
 ---
 
 Below you will find some of our most popular items. You can purchase these using the PayPal Buy Now buttons.*

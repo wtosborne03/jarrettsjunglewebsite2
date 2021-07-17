@@ -1,25 +1,15 @@
 ---
-title: "Ivy in Stock!"
-date: 2019-10-29T10:07:47+06:00
+title: Ivy in Stock!
+date: 2019-10-29 04:07:47 Z
 draft: false
-
-# post thumb
-image: "https://lindasflowers.com/wp-content/uploads/2016/12/potted-ivy1.jpg"
-
-# meta description
-description: "Ivy in Stock"
-
-# taxonomies
+image: https://lindasflowers.com/wp-content/uploads/2016/12/potted-ivy1.jpg
+description: Ivy in Stock
 categories:
-
-  - "Plants"
+- Plants
 tags:
-  - "New"
-
-# post type
-type: "post"
+- New
+type: post
 ---
-
 
 # Ivy in Stock
 

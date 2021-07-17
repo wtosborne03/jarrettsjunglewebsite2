@@ -1,11 +1,8 @@
 ---
-title: "Blog"
-date: 2019-10-29T13:49:23+06:00
+title: Blog
+date: 2019-10-29 07:49:23 Z
 draft: false
-
-# meta description
-description: "Recent Posts"
-
-# type
-type : "Blog"
+description: Recent Posts
+type: Blog
 ---
+
