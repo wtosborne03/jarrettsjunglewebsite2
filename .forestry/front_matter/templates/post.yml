@@ -1,0 +1,40 @@
+---
+---
+
+---
+label: Post
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+  config:
+    export_format: YYYY-MM-DD
+  default: now
+- type: file
+  name: image
+  label: image
+- type: text
+  name: description
+  label: description
+- type: list
+  name: categories
+  label: categories
+  config:
+    use_select: false
+  hidden: false
+  description: use "Plants" for it to show up on the news/plants section
+- type: list
+  name: tags
+  label: tags
+- type: text
+  name: type
+  label: type
+  description: '"post"'
+  hidden: false
+  default: post
+pages:
+- content/blog/terrariums.md
