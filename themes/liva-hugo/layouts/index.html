@@ -1,7 +1,9 @@
 {{ define "main" }}
 <!-- Jarrett's Header -->
 
-
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyC_-czyGuDPtTLXv8zioFztqAVe9zfAkHg"></script>
+<link  href="googlereview.css" rel="stylesheet" type="text/css">
+<script src="googlereview.js"></script>
 <!-- featured post -->
 <section class="section-sm">
   <div class="container-sm">
@@ -19,6 +21,7 @@
           <hr class="my-4">
           <p>We offer an ample inventory of tropical plants, outdoor plants, and succulents. Our in-store florist can take orders in-person,
             online, or over the phone. Call us or stop by if you have any plant question!</p>
+            
           <p class="lead">
             <a class="btn btn-primary btn-lg" href="/order" role="button">Shop Now</a>
           </p>
@@ -27,6 +30,63 @@
     </div>
   </div>
 </section>
+
+<div class="container-sm" style="margin-left:10% auto;margin-right:10% auto;">
+  <h1 style="text-decoration: underline; text-align: center;">Reviews</h1>
+  <div class="d-flex justify-content-center">
+    
+    <div id="google-reviews"></div>
+  </div>
+</div>
+<script>
+
+jQuery(document).ready(function($) {
+  if ($("#google-reviews").length == 0) {
+    return
+  }
+  // Find a placeID via https://developers.google.com/places/place-id
+  $("#google-reviews").googlePlaces({
+    placeId: 'ChIJYaw_OrC8-IgReIU7irl0BHc',
+    // the following params are optional (default values)
+    header: "", // html/text over Reviews
+    footer: '', // html/text under Reviews block
+    maxRows: 4, // max 5 rows of reviews to be displayed
+    minRating: 4, // minimum rating of reviews to be displayed
+    months: ["Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"],
+    textBreakLength: "20", // length before a review box is set to max width
+    shortenNames: false, // example: "Max Mustermann" -> "Max M."",
+    moreReviewsButtonLabel: 'Show More Reviews',
+    writeReviewButtonUrl: '', // url to Google Place write review popup
+    writeReviewButtonLabel: 'Write New Review',
+    showProfilePicture: true
+  });
+
+  function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+shownre = 0;
+setInterval(async function toggle() {
+
+ 
+  for (var i = 0; i <= 3; i++) {
+    if (i == shownre) {
+      $('#re' + i).toggleClass('hidden', false);
+      
+    }
+    else {
+      $('#re' + i).toggleClass('hidden', true);
+      
+    }
+  }
+  shownre = shownre + 1;
+  if (shownre == 4)  {shownre = 0};
+}, 6000);
+});
+
+
+
+</script>
 <!-- /featured post -->
 
   <div class="container-sm" style="height:4em;">
