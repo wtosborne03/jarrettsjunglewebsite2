@@ -1,0 +1,90 @@
+#google-reviews {
+  
+  /*display: grid;*/
+  /*grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));*/
+}
+
+.review-item {
+  margin: 2px auto;
+  padding: 1em;
+  transition: .0s all linear;
+}
+
+
+
+.review-item-long {
+  
+  margin: 2px auto;
+  padding: 1em;
+  transition: 0.25s all linear;
+}
+.hidden {
+  pointer-events: none;
+  margin: 0px auto;
+  padding: 0px;
+  height: 0;
+  opacity: 0 !important;
+}
+.review-picture {
+  position: absolute;
+  width: 10%;
+  max-width: 70px;
+  aspect-ratio: 1/1;
+}
+
+
+.review-meta, .review-stars {
+  text-align: center;
+  font-size: 30px;
+}
+
+.review-author {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.review-date {
+  opacity: .6;
+  display: block;
+}
+
+.review-text {
+  font-size: 25px;
+  line-height: 1.55;
+  text-align: left;
+  margin: auto;
+  overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 3; /* number of lines to show */
+   -webkit-box-orient: vertical;
+}
+
+.review-stars ul {
+  display: inline-block;
+  list-style: none !important;
+  margin: 0;
+  padding: 0;
+}
+
+.review-stars ul li {
+  float: left;
+  list-style: none !important;
+  margin-right: 1px;
+  line-height: 1;
+}
+
+.review-stars ul li i {
+  color: #eb6e00;
+  /* Google's Star Orange in Nov 2017 */
+  font-size: 1.4em;
+  font-style: normal;
+}
+
+.review-stars ul li i.inactive {
+  color: #c6c6c6;
+}
+
+.star:after {
+  content: "\2605";
+}
