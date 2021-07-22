@@ -106,27 +106,36 @@ setInterval(async function toggle() {
       {{ range first 5 (where .Site.RegularPages "Type" "post")}}
       <div class="col-md-3 col-xs-6 col-lg-3 col-xl-2 small-post-border" onclick="window.location='{{ .Permalink }}'" style="height:10em; cursor: pointer;">
         <article class="media">
+          <div id="late"></div>
           <div class="row"> 
+            
             {{ if .Params.Image }}
             <div class="col">
               <div class="mr-3" style="background-image: url('{{ .Params.Image | absURL }}'); width:100%; height: 9em; background-size: contain; background-repeat: no-repeat; background-position: center;"></div>
             </div>
             {{ end }}
               <div class="col">
+                
                 <div class="mb-1 post-meta">
                   
                   {{ if not .Params.HideDate }}
                   <span class="border-bottom border-primary px-2 mx-1"></span>
                   <span>{{ .PublishDate.Format "02 Jan 2006" }}</span>
                   {{ end }}
+                  
                 </div>
                 <a href="{{ .Permalink }}" class="h5 d-block mb-1">{{ .Title | markdownify }}</a>
                 <div class=" mb-1">{{ .Description }}</div>
+                
+                
               </div>
             </div>
         </article>
       </div>
       {{ end }}
+      <script>
+        $('#late').html('<h4 style="color:white; background-color: orange; text-align: center;"><i>Latest</i></h4>')
+      </script>
     </div>
  
 </section>

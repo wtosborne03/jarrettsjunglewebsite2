@@ -24,8 +24,6 @@
 }
 
 .shop-img {
-  width:300%;
-  height: 10px;
-  object-fit:contain;
-  filter: brightness(33%);
+  object-fit: cover;
+  aspect-ratio: 1/1;
 }
